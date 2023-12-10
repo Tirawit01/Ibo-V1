@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEEM-TIRAWIT</title>
+    <link rel="icon"
+        href="https://cdn.discordapp.com/attachments/1093611863897559211/1154797217375322132/364806853_1025807301934485_544726315995811807_n.jpg?ex=653298b7&is=652023b7&hm=6dc2bd4092041f058d60232252def4b9ad488aa44a1e23d70cfb2e6f280015d5&">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <script src="PEEM.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+        /* ขนาดหน้าจอคอมพิวเตอร์ */
+        @media (min-width: 769px) {
+            body {
+                width: 100vw;
+                height: 120vh;
+                background-image: url('https://cdn.discordapp.com/attachments/1155965892853760030/1155966048340803675/81a6b64add5ddd7ae31a508eadc91be6.gif?ex=6536d946&is=65246446&hm=cca6ee87abf580af4ea0b76d7544a5e38bed2ec271c0646bacab74a9e43a1636&');
+                background-size: cover;
+                background-position: center;
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+            }
+
+            .text {
+                font-size: 35px;
+                margin-top: 60px;
+                /* ปรับค่า margin-top เพิ่มขึ้นเพื่อขยับขึ้นไปอีกหน่อย */
+                font-family: 'Dela Gothic One', cursive;
+                color: rgb(255, 255, 255);
+                text-align: center
+            }
+
+
+            .logo1 {
+                text-align: center;
+            }
+
+            .logo1 img {
+                border: 5px solid #ebe4e4;
+                border-radius: 50%;
+                width: 200px;
+                transition: transform 0.3s;
+                /* เพิ่มเอฟเฟกต์การเปลี่ยนรูปร่าง */
+            }
+
+            .logo1 img:hover {
+                transform: scale(1.2);
+                /* ขยายภาพให้กลายเป็น 120% ของขนาดเดิม */
+            }
+
+
+            .buttons {
+                text-align: center;
+
+            }
+
+            .btn-hover {
+                width: 600px;
+                font-size: 16px;
+                font-weight: 600;
+                color: #fff;
+                cursor: pointer;
+                margin: 10px;
+                height: 55px;
+                text-align: center;
+                border: none;
+                background-size: 300% 100%;
+
+                border-radius: 50px;
+                moz-transition: all .4s ease-in-out;
+                -o-transition: all .4s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+            }
+
+            .btn-hover:hover {
+                background-position: 100% 0;
+                moz-transition: all .4s ease-in-out;
+                -o-transition: all .4s ease-in-out;
+                -webkit-transition: all .4s ease-in-out;
+                transition: all .4s ease-in-out;
+            }
+
+            .btn-hover:focus {
+                outline: none;
+            }
+
+            .btn-hover.color-9 {
+                background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+                box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+            }
+        }
+
+        /* ขนาดหน้าจอมือถือ */
+        @media (max-width: 768px) {
+            body {
+                width: 100vw;
+                height: 120vh;
+                background-image: url('https://cdn.discordapp.com/attachments/1155965892853760030/1155966048340803675/81a6b64add5ddd7ae31a508eadc91be6.gif?ex=6536d946&is=65246446&hm=cca6ee87abf580af4ea0b76d7544a5e38bed2ec271c0646bacab74a9e43a1636&');
+                background-size: cover;
+                background-position: center;
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+            }
+
+            .text {
+                font-size: 20px;
+                margin-top: 30px;
+                font-family: 'Dela Gothic One', cursive;
+                color: rgb(255, 255, 255);
+                text-align: center;
+
+
+
+                .logo1 img {
+                    border: 5px solid #ebe4e4;
+                    border-radius: 50%;
+                    ;
+                    width: 200px;
+                    ;
+                    transition: transform 0.3s;
+                    /* เพิ่มเอฟเฟกต์การเปลี่ยนรูปร่าง */
+                }
+
+                .logo1 img:hover {
+                    transform: scale(1.2);
+                    /* ขยายภาพให้กลายเป็น 120% ของขนาดเดิม */
+                }
+
+                .buttons {
+                    margin: 10%;
+                    text-align: center;
+                }
+
+                .btn-hover {
+                    width: 290px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #fff;
+                    cursor: pointer;
+                    margin: 20px;
+                    height: 55px;
+                    text-align: center;
+                    border: none;
+                    background-size: 300% 100%;
+
+                    border-radius: 50px;
+                    moz-transition: all .4s ease-in-out;
+                    -o-transition: all .4s ease-in-out;
+                    -webkit-transition: all .4s ease-in-out;
+                    transition: all .4s ease-in-out;
+                }
+
+                .btn-hover:hover {
+                    background-position: 100% 0;
+                    moz-transition: all .4s ease-in-out;
+                    -o-transition: all .4s ease-in-out;
+                    -webkit-transition: all .4s ease-in-out;
+                    transition: all .4s ease-in-out;
+                }
+
+                .btn-hover:focus {
+                    outline: none;
+                }
+
+                .btn-hover.color-9 {
+                    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+                    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="trail"></div>
+    <script src="script.js"></script>
+    <div class="text">
+        <center>
+            <h1 class="text1">TIRAWIT</h1>
+        </center>
+        <div class="logo1">
+            <img class="logo1" <img class="logo"
+                src="https://cdn.discordapp.com/attachments/1093611863897559211/1154797217375322132/364806853_1025807301934485_544726315995811807_n.jpg?ex=653298b7&is=652023b7&hm=6dc2bd4092041f058d60232252def4b9ad488aa44a1e23d70cfb2e6f280015d5&">
+        </div>
+        <br>
+        <div class="contact">
+            <div class="btn">
+                <div class="facebook">
+                    <a href="https://web.facebook.com/tirawit.tirawit"><button class="btn-hover color-9">Facebook</button></a>
+                </div>
+                <div class="IG">
+                    <a href="https://discord.gg/SDQrsjkS9h"><button class="btn-hover color-9">Discord</button></a>
+                </div>
+                <div class="facebook">
+                    <a href="https://www.instagram.com/tirawit_sukkhao/"><button class="btn-hover color-9">Instagram</button></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
